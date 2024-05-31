@@ -1,0 +1,12 @@
+import { NamedNode, Prefixes, Quad, Store } from 'n3';
+import { Term } from '@rdfjs/types';
+import { InputListEntry } from './theme';
+import { Config } from './config';
+export declare function findObjectValueByPredicate(quads: Quad[], predicate: string, prefix?: string, language?: string): string;
+export declare function findObjectByPredicate(quads: Quad[], predicate: string, prefix?: string, language?: string): Term | undefined;
+export declare function focusFirstInputElement(context: HTMLElement): void;
+export declare function findLabel(quads: Quad[], language?: string): string;
+export declare function createInputListEntries(subjects: Term[], shapesGraph: Store, language: string): InputListEntry[];
+export declare function removePrefixes(id: string, prefixes: Prefixes): string;
+export declare function findInstancesOf(clazz: NamedNode, config: Config): InputListEntry[];
+export declare function isURL(input: string): boolean;

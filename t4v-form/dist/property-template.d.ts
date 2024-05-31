@@ -1,0 +1,37 @@
+import { Literal, NamedNode, BlankNode, Quad } from 'n3';
+import { Term } from '@rdfjs/types';
+import { Config } from './config';
+export declare class ShaclPropertyTemplate {
+    label: string;
+    nodeId: NamedNode | BlankNode;
+    name: Literal | undefined;
+    description: Literal | undefined;
+    path: string | undefined;
+    node: NamedNode | undefined;
+    class: NamedNode | undefined;
+    minCount: number | undefined;
+    maxCount: number | undefined;
+    minLength: number | undefined;
+    maxLength: number | undefined;
+    minInclusive: number | undefined;
+    maxInclusive: number | undefined;
+    minExclusive: number | undefined;
+    maxExclusive: number | undefined;
+    singleLine: boolean | undefined;
+    cssClass: string | undefined;
+    defaultValue: Term | undefined;
+    pattern: string | undefined;
+    order: number | undefined;
+    nodeKind: NamedNode | undefined;
+    shaclAnd: string | undefined;
+    shaclIn: string | undefined;
+    shaclOr: Term[] | undefined;
+    languageIn: Term[] | undefined;
+    datatype: NamedNode | undefined;
+    hasValue: Term | undefined;
+    config: Config;
+    extendedShapes: NamedNode[] | undefined;
+    constructor(quads: Quad[], nodeId: NamedNode | BlankNode, config: Config);
+    merge(quads: Quad[]): ShaclPropertyTemplate;
+    clone(): ShaclPropertyTemplate;
+}

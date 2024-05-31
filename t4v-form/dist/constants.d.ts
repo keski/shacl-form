@@ -1,0 +1,17 @@
+export declare const PREFIX_SHACL = "http://www.w3.org/ns/shacl#";
+export declare const PREFIX_DASH = "http://datashapes.org/dash#";
+export declare const PREFIX_XSD = "http://www.w3.org/2001/XMLSchema#";
+export declare const PREFIX_RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+export declare const PREFIX_RDFS = "http://www.w3.org/2000/01/rdf-schema#";
+export declare const PREFIX_SKOS = "http://www.w3.org/2004/02/skos/core#";
+export declare const PREFIX_OWL = "http://www.w3.org/2002/07/owl#";
+export declare const PREFIX_OA = "http://www.w3.org/ns/oa#";
+export declare const SHAPES_GRAPH: import("n3").NamedNode<"shapes">;
+export declare const OWL_IMPORTS: import("n3").NamedNode<string>;
+export declare const RDF_PREDICATE_TYPE: import("n3").NamedNode<string>;
+export declare const RDFS_PREDICATE_SUBCLASS_OF: import("n3").NamedNode<string>;
+export declare const SKOS_PREDICATE_BROADER: import("n3").NamedNode<string>;
+export declare const OWL_OBJECT_NAMED_INDIVIDUAL: import("n3").NamedNode<string>;
+export declare const SHACL_OBJECT_NODE_SHAPE: import("n3").NamedNode<string>;
+export declare const SHACL_PREDICATE_CLASS: import("n3").NamedNode<string>;
+export declare const SHACL_PREDICATE_TARGET_CLASS: import("n3").NamedNode<string>;
