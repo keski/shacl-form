@@ -1,0 +1,106 @@
+:root {
+    --colorDarkBlue: #293e52;
+    --colorWhite: #fff;
+    --colorLightYellow: #fff4dd;
+    --colorOrange: #df9500;
+    --colorBlack: #000;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    color: #999;
+}
+
+body {
+    padding: 0;
+    font-family: Cabin,sans-serif;
+    color: var(--colorWhite);
+    background-color: var(--colorDarkBlue);
+}
+
+#content {
+    max-width: 900px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    
+}
+
+header {
+    height: 190px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header > div {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#logo img {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+#settings {
+    display: grid;
+    grid-column: span 2;
+    gap: 10px;
+    grid-template-columns: 80px 1fr;
+    align-self: start;
+}
+
+#types {
+    grid-column: span 2;
+}
+
+#sticker {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+#sticker img {
+    height: 100%;
+}
+
+select, input {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+}
+
+#status img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#status ul {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
