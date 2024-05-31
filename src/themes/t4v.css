@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.editor:not([type='checkbox']) {
+    border: 1px solid #DDD;
+    padding: 2px 4px;
+}
+
+.property-instance {
+    align-items: center;
+}
+
+.property-instance label {
+    display: inline-block;
+    word-break: break-word;
+    line-height: 1em;
+    padding-top: 0.15em;
+    padding-right: 1em;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.property-instance:not(:first-child)>label {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.mode-edit .property-instance label {
+    width: 200px;
+    line-height: 1.4em;
+}
+
+.mode-edit .property-instance label.required::before {
+    content: '';
+}
+
+.mode-edit .property-instance label.required::after {
+    color: #df9500;
+    content: '*';
+    position: absolute;
+}
+
+.property-instance.valid::before {
+    content: '';
+}
+
+.property-instance.valid::before {
+    position: absolute;
+    color: rgb(59, 214, 59);
+    content: '✓';
+    left: -20px;
+}
+
+.validation-error {
+    position: absolute;
+    left: -20px;
+    margin-top: 2px;
+}
+
+.editor,
+.editor:not([type="checkbox"]) {
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button[type="button"] {
+    font-size: 1em;
+    margin-top: 30px;
+    width: 100%;
+}
+
+shacl-node .add-button {
+    color: #fff;
+}

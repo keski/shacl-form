@@ -4,6 +4,7 @@ module.exports = [
     {
         entry: {
             'form-default': './src/form-default.ts',
+            'form-t4v': './src/form-t4v.ts',
             'form-material': './src/form-material.ts',
             'form-bootstrap': './src/form-bootstrap.ts',
             'plugins/mapbox': './src/plugins/mapbox.ts',
@@ -27,7 +28,7 @@ module.exports = [
             static: [ { directory: path.join(__dirname, 'demo'), serveIndex: true } ],
             compress: true,
             hot: true,
-            port: 8080,
+            port: 5555,
         },
         // devtool: "source-map",
     },
