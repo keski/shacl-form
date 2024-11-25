@@ -1,6 +1,5 @@
 let quantity = 1
-let api = "https://ontodeside.ida.liu.se"
-
+let api = "http://localhost:8080"
 let data_shapes_url = `${api}/api/owl2shacl?url=http%3A%2F%2Fw3id.org%2FCEON%2Fontology%2Fflatglass%2F`
 //data_shapes_url = "test.ttl"
 let data_shape_subject = "http://owl2shacl.liu.se/WindowShape"
@@ -8,7 +7,6 @@ let data_shape_subject = "http://owl2shacl.liu.se/WindowShape"
 let form = document.getElementById("shacl-form")
 form.setAttribute('data-shape-subject', data_shape_subject)
 form.setAttribute('data-shapes-url', data_shapes_url)
-
 
 // Select the form element directly
 const el = document.getElementById('shacl-form');
@@ -46,7 +44,6 @@ function getTypes() {
     let target = `http://example.org/${bnode_target.split(":")[1]}`
     data = data.replaceAll(bnode_target, `<${target}>`)
     let schema = data_shapes_url
-
 
     let message = {
         target,
